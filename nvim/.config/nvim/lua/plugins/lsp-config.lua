@@ -3,7 +3,7 @@ return {
 
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = { ensure_installed = { "lua_ls", "ts_ls", "html", "cssls" } },
+    opts = { ensure_installed = { "lua_ls", "ts_ls", "html", "cssls", "tailwindcss" } },
   },
 
   {
@@ -20,19 +20,27 @@ return {
       vim.lsp.enable("lua_ls")
 
       -- TypeScript / JavaScript
-      vim.lsp.config.ts_ls = { capabilities = capabilities }
+      vim.lsp.config.ts_ls = {
+        capabilities = capabilities,
+      }
       vim.lsp.enable("ts_ls")
 
       -- HTML
-      vim.lsp.config.html = { capabilities = capabilities }
+      vim.lsp.config.html = {
+        capabilities = capabilities,
+      }
       vim.lsp.enable("html")
 
       -- CSS
-      vim.lsp.config.cssls = { capabilities = capabilities }
+      vim.lsp.config.cssls = {
+        capabilities = capabilities,
+      }
       vim.lsp.enable("cssls")
 
       -- Tailwind CSS
-      vim.lsp.config.tailwindcss = { capabilities = capabilities }
+      vim.lsp.config.tailwindcss = {
+        capabilities = capabilities,
+      }
       vim.lsp.enable("tailwindcss")
 
       -- Keymaps

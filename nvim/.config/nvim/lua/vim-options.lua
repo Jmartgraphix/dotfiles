@@ -30,3 +30,5 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { desc = "New tab", silent = true })
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { desc = "Close tab", silent = true })
 vim.keymap.set("n", "<leader>to", ":tabonly<CR>", { desc = "Close other tabs", silent = true })
+
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
